@@ -16,7 +16,7 @@
 	$stmt->execute($params);
 
 	$url = $stmt->fetch();
-	print_r($url);
+	//print_r($url);
 
 	header("location: " . $url['long_url']);
 	
