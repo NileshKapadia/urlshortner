@@ -4,7 +4,7 @@
 	$db = new Database("localhost", "urlshorter", "root", "");
 	$db = $db->connect();
 
-	$stmt = $db->query("SELECT * FROM 	tbl_urlshortner");
+	$stmt = $db->query("SELECT * FROM tbl_urlshortner");
 	$urls = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	
 ?>
